@@ -15,7 +15,7 @@ const Home = () => {
 			/>
 
 			<Text style={gStyles.textCenter}>
-				Welcome to the Liferay React Native Demo App.
+				Welcome to Encajame App.
 			</Text>
 
 			<Text style={[homeStyles.version, gStyles.textCenter, gStyles.m2]}>

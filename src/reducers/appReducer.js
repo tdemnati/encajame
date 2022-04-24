@@ -4,12 +4,12 @@ import {asyncMultiSet} from '../util/async';
 
 const initialState = {
 	accountId: null,
-	authenticationType: 'basic',
+	authenticationType: 'OAuth',
 	cartId: null,
 	channelId: null,
 	clientId: 'id-6bf291f5-3cd5-dff9-4892-0bbeeb77b0',
 	error: undefined,
-	isConfigured: false,
+	isConfigured: true,
 	isLoading: true,
 	lang: 'en_US',
 	liferayURL: 'https://vivafruta.es:8443',
@@ -20,7 +20,7 @@ const initialState = {
 	},
 	siteId: null,
 	userId: null,
-	username: 'test@liferay.com',
+	username: 'name@domain.com',
 };
 
 const appStateReducer = (state, action) => {
