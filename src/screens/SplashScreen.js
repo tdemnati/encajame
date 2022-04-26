@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {Image, StyleSheet, Text} from 'react-native';
+import {Image, ImageBackground, StyleSheet, Text} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 
 import useInterval from '../hooks/useInterval';
@@ -16,15 +16,42 @@ function Splash() {
 
 	return (
 		<SafeAreaView style={[gStyles.centerContent]}>
+		<ImageBackground 
+		source={require('../../assets/boxes.jpg')}
+		style={mystyles.image}>
+      <Text style={mystyles.text}>Inside</Text>
+    
+		
 			<Image
 				source={require('../../assets/splash.png')}
 				style={splashStyles.image}
 			/>
 
 			<Text style={gStyles.textCenter}>Loading {dots}</Text>
+		
+		</ImageBackground>
 		</SafeAreaView>
 	);
 }
+
+
+const mystyles = StyleSheet.create({
+	container: {
+	  flex: 1,
+	},
+	image: {
+	  flex: 1,
+	  justifyContent: "center"
+	},
+	text: {
+	  color: "white",
+	  fontSize: 42,
+	  lineHeight: 84,
+	  fontWeight: "bold",
+	  textAlign: "center",
+	  backgroundColor: "#000000c0"
+	}
+  });
 
 const splashStyles = StyleSheet.create({
 	image: {
@@ -32,5 +59,7 @@ const splashStyles = StyleSheet.create({
 		width: '100%',
 	},
 });
+
+
 
 export default Splash;

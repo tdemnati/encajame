@@ -7,18 +7,18 @@ const initialState = {
 	authenticationType: 'OAuth',
 	cartId: null,
 	channelId: null,
-	clientId: 'id-6bf291f5-3cd5-dff9-4892-0bbeeb77b0',
+	clientId: 'id-7f7add14-a8e3-6f76-3ca2-962c363e50',
 	error: undefined,
 	isConfigured: true,
 	isLoading: true,
 	lang: 'en_US',
-	liferayURL: 'https://vivafruta.es:8443',
+	liferayURL: 'http://51.89.148.172:8181',
 	loggedIn: {
 		error: null,
 		loading: true,
 		value: false,
 	},
-	siteId: null,
+	siteId: '20123',
 	userId: null,
 	username: 'name@domain.com',
 };
@@ -78,13 +78,14 @@ const appStateReducer = (state, action) => {
 					loading: false,
 					value: false,
 				},
-				siteId: null,
+				siteId: '20123',
 				userId: null,
 			};
 		}
 		case 'LOGGING_IN': {
 			return {
 				...state,
+				siteId: '20123',
 				loggedIn: {
 					...state.loggedIn,
 					error: null,

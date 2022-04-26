@@ -63,7 +63,7 @@ function HomeNavigator({navigation}) {
 				component={Home}
 				name="Home"
 				options={{
-					headerTitle: 'Welcome',
+					headerTitle: 'About',
 				}}
 			/>
 		</Stack.Navigator>
