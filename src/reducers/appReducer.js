@@ -4,23 +4,23 @@ import {asyncMultiSet} from '../util/async';
 
 const initialState = {
 	accountId: null,
-	authenticationType: 'OAuth',
+	authenticationType: 'oauth',
 	cartId: null,
 	channelId: null,
-	clientId: 'id-7f7add14-a8e3-6f76-3ca2-962c363e50',
+	clientId: 'id-6a24b249-0d52-85a4-ad6d-36c5da2138',
 	error: undefined,
-	isConfigured: true,
+	isConfigured: false,
 	isLoading: true,
 	lang: 'en_US',
-	liferayURL: 'http://51.89.148.172:8181',
+	liferayURL: 'http://51.89.148.172:8080',
 	loggedIn: {
 		error: null,
 		loading: true,
 		value: false,
 	},
-	siteId: '20123',
+	siteId: null,
 	userId: null,
-	username: 'name@domain.com',
+	username: 'test@encajame.com',
 };
 
 const appStateReducer = (state, action) => {
@@ -78,14 +78,13 @@ const appStateReducer = (state, action) => {
 					loading: false,
 					value: false,
 				},
-				siteId: '20123',
+				siteId: null,
 				userId: null,
 			};
 		}
 		case 'LOGGING_IN': {
 			return {
 				...state,
-				siteId: '20123',
 				loggedIn: {
 					...state.loggedIn,
 					error: null,

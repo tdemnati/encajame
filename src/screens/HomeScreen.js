@@ -15,7 +15,7 @@ const Home = () => {
 			/>
 
 			<Text style={gStyles.textCenter}>
-				Welcome to Encajame App.
+				Welcome to the Liferay React Native Demo App.
 			</Text>
 
 			<Text style={[homeStyles.version, gStyles.textCenter, gStyles.m2]}>
@@ -63,7 +63,7 @@ function HomeNavigator({navigation}) {
 				component={Home}
 				name="Home"
 				options={{
-					headerTitle: 'About',
+					headerTitle: 'Welcome',
 				}}
 			/>
 		</Stack.Navigator>

@@ -2,7 +2,7 @@ import base64 from 'base-64';
 import qs from 'qs';
 
 const AUTH_URL = '/o/oauth2/token';
-const BASE_URL = 'https://vivafruta.es:8443';
+const BASE_URL = 'http://51.89.148.172:8080';
 
 export const RETURN_TYPES = {
 	blob: 'blob',
